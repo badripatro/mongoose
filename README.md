@@ -1,13 +1,23 @@
 # Mongoose:  Do We Need a Scanner for Vision Mamba?
 
 
-![Mongoose Model Architecture](figure/mongoose_main.jpg)
+![Mongoose Model Architecture](figure/mongoose_main.png)
 
+![Mongoose Model Architecture](figure/Mongoose_sota.png)
 
-![Mongoose Model Architecture](figure/table_abl.jpg)
+![Table Ablation](figure/table_abl.jpg)
 
+![Table Ablation](figure/table_time.jpg)
 
-![Mongoose Model Architecture](figure/table_abl.jpg)
+![Mongoose Model Architecture](figure/table_seg.jpg)
+
+![Table Ablation](figure/table_obj.jpg)
+
+![Table Ablation](figure/table_adk.jpg)
+
+![Table Ablation](figure/table_tran.jpg)
+
+![Table Ablation](figure/table_lat.jpg)
 
 ## Requirement:
 
@@ -88,4 +98,5 @@ python3 -m torch.distributed.launch \
    --use_env main.py --config configs/mongoose/mongoose_l.py --data-path ../../../../dataset/Image_net/imagenet --epochs 310 --batch-size 128 --drop-path 0.05 --weight-decay 0.05 --lr 1e-3 --num_workers 24\
    --token-label --token-label-size 7 --token-label-data ../../../../dataset/Image_net/imagenet_efficientnet_l2_sz475_top5/
 ```
+
 
